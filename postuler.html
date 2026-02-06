@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Postulez aux offres de stage et d'alternance via notre formulaire en ligne rapide.">
+    <title>Tremplin - Postuler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>Tremplin</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Offres</a></li>
+                <li><a href="entreprises.html">Entreprises</a></li>
+                <li><a href="postuler.html" class="btn-menu">Candidature Spontanée</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Formulaire de Candidature</h2>
+            <p>Envoyez votre dossier à nos entreprises partenaires.</p>
+            
+            <form action="confirmation.html">
+                <label for="nom">Nom & Prénom</label>
+                <input type="text" id="nom" name="nom" required placeholder="Jean Dupont">
+
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" name="email" required placeholder="jean@exemple.com">
+
+                <label for="contrat">Type de contrat recherché</label>
+                <select id="contrat" name="contrat" required>
+                    <option value="">-- Sélectionner --</option>
+                    <option value="stage">Stage</option>
+                    <option value="alternance">Alternance</option>
+                    <option value="stagealternance">Stage + Alternance</option>
+                </select>
+
+                <label for="domaine">Choix du domaine de travail</label>
+                <select id="domaine" name="domaine" required>
+                    <option value="">-- Sélectionner --</option>
+                    <option value="informatique">Informatique</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+
+                <label for="cv">Votre CV (PDF)</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+                <button type="submit">Envoyer ma candidature</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions Légales</a>
+            <a href="mentions-legales.html">Politique de Confidentialité</a>
+        </div>
+        <p style="margin-top:10px;">&copy; 2026 Tremplin - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
